@@ -1,9 +1,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix : <https://techlib.cz/vocabulary/ccmm/>.
 
-<https://techlib.cz/vocabulary/ccmm/> a owl:Ontology.
+<https://techlib.cz/vocabulary/ccmm/> a owl:Ontology, prof:Profile.
 :Distribution-DataService a owl:Class, rdfs:Class;
     rdfs:label "Distribution - data service"@en;
     rdfs:comment "Physical embodiment of the dataset as a particular data service. "@en;
@@ -126,9 +127,9 @@
     rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range :AlternateTitle.
-:relationType a rdf:Property, owl:DatatypeProperty;
-    rdfs:label "Relation type"@en;
-    rdfs:comment "Type of the relation between Dataset and related resource."@en;
+:hasType a rdf:Property, owl:ObjectProperty;
+    rdfs:label "has type"@en;
+    rdfs:comment "Reference to the codelist value giving the specific type to the attribute."@en;
     rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
-    rdfs:domain rdfs:Resource;
-    rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
+    rdfs:domain <https://www.w3.org/2002/07/owl#Thing>;
+    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept>.

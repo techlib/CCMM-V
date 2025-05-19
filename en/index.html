@@ -1,291 +1,294 @@
 
 
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8" />
-      <title>Czech Core Metadata Vocabulary</title>
-      <meta name="color-scheme" content="light dark">
-      <script type="application/ld+json">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Czech Core Metadata Vocabulary</title>
+    <meta name="color-scheme" content="light dark">
+    <script type="application/ld+json">
+      {
+      "@id": "https://techlib.cz/vocabulary/ccmm/",
+      "@type": [
+        "dsv:VocabularySpecificationDocument",
+        "adms:AssetDistribution",
+        "prof:ResourceDescriptor"
+      ],
+      "hasArtifact": ".",
+      "hasRole": "role:Guidance",
+      "format": "filetype:HTML",
+      "inSpecificationOf": [
         {
-        "@id": "",
-        "@type": [
-          "http://purl.org/dc/terms/Standard",
-          "http://www.w3.org/2002/07/owl#Ontology"
-        ],
-        "http://purl.org/dc/terms/title": [
-          {
-            "@language": "en",
-            "@value": "Czech Core Metadata Vocabulary"
-          }
-        ],
-        "https://w3id.org/dsv#artefact": [
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./model.owl.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
-              }
-            ]
+          "@id": "https://techlib.cz/vocabulary/ccmm/",
+          "@type": [
+            "owl:Ontology",
+            "prof:Profile"
+          ],
+          "title": {
+            "en": "Czech Core Metadata Vocabulary"
           },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./dsv.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/schema"
-              }
-            ]
+          "description": {
+            "en": "Vocabulary containing terms missing or disinterpreted in other vocabularies needed for profile of Czech Core Metadata Model."
           },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": ""
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/specification"
-              }
-            ]
-          }
-        ],
-        "http://www.w3.org/ns/dx/prof/hasResource": [
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./model.owl.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
-              }
-            ]
-          },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./dsv.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/schema"
-              }
-            ]
-          },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": ""
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/specification"
-              }
-            ]
-          }
-        ],
-        "http://purl.org/dc/terms/references": [
-          [
+          "isProfileOf": [
             {
-              "@id": "https://datagov-cz.github.io/cache-slovniku/rdf.ttl"
+              "hasArtifact": [
+                "https://datagov-cz.github.io/cache-slovniku/rdf.ttl"
+              ]
             },
             {
-              "@id": "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
+              "hasArtifact": [
+                "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
+              ]
             },
             {
-              "@id": "https://www.w3.org/ns/dcat3.ttl"
+              "hasArtifact": [
+                "https://www.w3.org/ns/dcat3.ttl"
+              ]
             },
             {
-              "@id": "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
+              "hasArtifact": [
+                "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
+              ]
             },
             {
-              "@id": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+              "hasArtifact": [
+                "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+              ]
             },
             {
-              "@id": "https://www.w3.org/ns/prov.ttl"
+              "hasArtifact": [
+                "https://www.w3.org/ns/prov.ttl"
+              ]
             },
             {
-              "@id": "https://michalmed.github.io/DataCite/en/model.owl.ttl"
+              "hasArtifact": [
+                "https://michalmed.github.io/DataCite/en/model.owl.ttl"
+              ]
             },
             {
-              "@id": "https://www.w3.org/ns/legacy_adms"
+              "hasArtifact": [
+                "https://www.w3.org/ns/legacy_adms"
+              ]
+            },
+            {
+              "hasArtifact": [
+                "https://datagov-cz.github.io/cache-slovniku/skos.rdf"
+              ]
+            }
+          ],
+          "hasResource": [
+            {
+              "@id": "https://techlib.cz/vocabulary/ccmm/spec",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "./model.owl.ttl",
+              "hasRole": "role:Vocabulary",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": [
+                "http://www.w3.org/2000/01/rdf-schema#",
+                "http://www.w3.org/2002/07/owl"
+              ]
+            },
+            {
+              "@id": "https://techlib.cz/vocabulary/ccmm/45318abc-c332-421d-8499-69af3c9efa5e",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "./45318abc-c332-421d-8499-69af3c9efa5e.svg",
+              "hasRole": "role:Guidance",
+              "format": "filetype:SVG",
+              "conformsTo": "https://www.w3.org/TR/SVG/"
+            },
+            {
+              "@id": "https://techlib.cz/vocabulary/ccmm/",
+              "@type": [
+                "dsv:VocabularySpecificationDocument",
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": ".",
+              "hasRole": "role:Guidance",
+              "format": "filetype:HTML"
             }
           ]
-        ],
-        "http://www.w3.org/ns/dx/prof/isProfileOf": [
-          [
-            {
-              "@id": "https://datagov-cz.github.io/cache-slovniku/rdf.ttl"
+        }
+      ],
+      "@context": {
+        "@version": 1.1,
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "role": "prof:role/",
+        "dsv": "https://w3id.org/dsv#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adms": "http://www.w3.org/ns/adms#",
+        "filetype": "http://publications.europa.eu/resource/authority/file-type/",
+        "title": {
+          "@id": "http://purl.org/dc/terms/title",
+          "@container": "@language"
+        },
+        "description": {
+          "@id": "http://purl.org/dc/terms/description",
+          "@container": "@language"
+        },
+        "conformsTo": {
+          "@id": "http://purl.org/dc/terms/conformsTo",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "format": {
+          "@id": "http://purl.org/dc/terms/format",
+          "@type": "@id"
+        },
+        "hasRole": {
+          "@id": "prof:hasRole",
+          "@type": "@id"
+        },
+        "hasArtifact": {
+          "@id": "prof:hasArtifact",
+          "@type": "@id"
+        },
+        "inSpecificationOf": {
+          "@reverse": "prof:hasResource",
+          "@type": "@id",
+          "@context": {
+            "title": {
+              "@id": "http://purl.org/dc/terms/title",
+              "@container": "@language"
             },
-            {
-              "@id": "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
+            "description": {
+              "@id": "http://purl.org/dc/terms/description",
+              "@container": "@language"
             },
-            {
-              "@id": "https://www.w3.org/ns/dcat3.ttl"
+            "hasToken": {
+              "@id": "prof:hasToken",
+              "@type": "xsd:token"
             },
-            {
-              "@id": "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
+            "isProfileOf": {
+              "@id": "prof:isProfileOf",
+              "@container": "@set",
+              "@context": {
+                "title": {
+                  "@id": "http://purl.org/dc/terms/title",
+                  "@container": "@language"
+                },
+                "hasResource": {
+                  "@id": "prof:hasResource",
+                  "@type": "@id",
+                  "@container": "@set"
+                }
+              }
             },
-            {
-              "@id": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
-            },
-            {
-              "@id": "https://www.w3.org/ns/prov.ttl"
-            },
-            {
-              "@id": "https://michalmed.github.io/DataCite/en/model.owl.ttl"
-            },
-            {
-              "@id": "https://www.w3.org/ns/legacy_adms"
+            "hasResource": {
+              "@id": "prof:hasResource",
+              "@container": "@set",
+              "@context": {
+                "conformsTo": {
+                  "@id": "http://purl.org/dc/terms/conformsTo",
+                  "@type": "@id",
+                  "@container": "@set"
+                },
+                "format": {
+                  "@id": "http://purl.org/dc/terms/format",
+                  "@type": "@id"
+                },
+                "hasRole": {
+                  "@id": "prof:hasRole",
+                  "@type": "@id"
+                },
+                "hasArtifact": {
+                  "@id": "prof:hasArtifact",
+                  "@type": "@id"
+                }
+              }
             }
-          ]
-        ]
+          }
+        }
       }
-      </script>
-      <script
-        src="https://www.w3.org/Tools/respec/respec-w3c"
-        class="remove"
-        defer
-      ></script>
-      <script class="remove">
-        // All config options at https://respec.org/docs/
-        var respecConfig = {
-          specStatus: "base",
-          editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
-          //github: "some-org/mySpec",
-          shortName: "todo",
-          //xref: "web-platform",
-          //group: "my-working-group",
-        };
-      </script>
-      
-      <style>
-        .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
-          max-width: 100%;
-          margin: auto;
-          height: auto;
-        }
-      
-        table.simple {
-          margin: auto;
-          border-spacing: 0;
-          border-collapse: collapse;
-        }
-      
-        table.simple th {
-          padding: 3px 10px;
-          text-align: left;
-        }
-      
-        table.simple td {
-          border-top: 1px solid #ddd;
-          padding: 3px 10px;
-        }
-      </style>    </head>
-    <body>
-      <p class="copyright"></p>
-      <section id="abstract">
-        <p>
-          This file documents
-          <strong>Czech Core Metadata Vocabulary</strong>.</p>
-      </section>
+    }
+    </script>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+      defer
+    ></script>
+    <script class="remove">
+      // All config options at https://respec.org/docs/
+      var respecConfig = {
+        specStatus: "base",
+        editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
+        //github: "some-org/mySpec",
+        shortName: "todo",
+        //xref: "web-platform",
+        //group: "my-working-group",
+      };
+    </script>
+    
+    <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+      }
+    
+      table.simple {
+        margin: auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+    
+      table.simple th {
+        padding: 3px 10px;
+        text-align: left;
+      }
+    
+      table.simple td {
+        border-top: 1px solid #ddd;
+        padding: 3px 10px;
+      }
+    </style>  </head>
+  <body>
+    <p class="copyright"></p>
+    <section id="abstract">
+      <p>
+        This file documents
+        <strong>Czech Core Metadata Vocabulary</strong>.</p>
+    </section>
 
-      <section>
-        <h2>Overview</h2>
+    <section>
+      <h2>Overview</h2>
 
-          <a href="./45318abc-c332-421d-8499-69af3c9efa5e.svg">
-            <figure>
-              <img src="./45318abc-c332-421d-8499-69af3c9efa5e.svg" alt="Main view" />
-              <figcaption>Main view</figcaption>
-            </figure>
-          </a>
-      </section>
+        <a href="./45318abc-c332-421d-8499-69af3c9efa5e.svg">
+          <figure>
+            <img src="./45318abc-c332-421d-8499-69af3c9efa5e.svg" alt="Main view" />
+            <figcaption>Main view</figcaption>
+          </figure>
+        </a>
+    </section>
+
+
+
 
       <section>
         <h2>Classes</h2>
 
-            <section id="ValidationResult">
-              <h4>Validation result</h4>
+            <section id="AlternateTitle">
+              <h4>Alternate title</h4>
             
               <table class="def">
                 <tr>
                   <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/ValidationResult">https://techlib.cz/vocabulary/ccmm/ValidationResult</a></td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/AlternateTitle">https://techlib.cz/vocabulary/ccmm/AlternateTitle</a></td>
                 </tr>
                 <tr>
                   <td>Label</td>
-                  <td>Validation result</td>
+                  <td>Alternate title</td>
                 </tr>
                 <tr>
                   <td>Definition</td>
-                  <td>Class describing the result of validation testing. It may include validation of metadata, data and/or web services accessing the data.</td>
-                </tr>
-              </table>
-            </section>            <section id="TimeReference">
-              <h4>Time reference</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/TimeReference">https://techlib.cz/vocabulary/ccmm/TimeReference</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>Time reference</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>A date on which something relative to the resource has happened.</td>
-                </tr>
-              </table>
-            </section>            <section id="ResourceToAgentRelationship">
-              <h4>Resource to agent relationship</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/ResourceToAgentRelationship">https://techlib.cz/vocabulary/ccmm/ResourceToAgentRelationship</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>Resource to agent relationship</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>An association class for attaching additional information to a relationship between Dataset and Agent.</td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="http://www.w3.org/ns/dcat#Relationship">Relationship</a></td>
+                  <td>Alternate title of the resource.</td>
                 </tr>
               </table>
             </section>            <section id="ContactDetails">
@@ -303,27 +306,6 @@
                 <tr>
                   <td>Definition</td>
                   <td>Contact details such as telephone, e-mail address etc.</td>
-                </tr>
-              </table>
-            </section>            <section id="Distribution-DownloadableFile">
-              <h4>Distribution - downloadable file</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/Distribution-DownloadableFile">https://techlib.cz/vocabulary/ccmm/Distribution-DownloadableFile</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>Distribution - downloadable file</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Physical embodiment of the dataset in a particular format. </td>
-                </tr>
-                <tr>
-                  <td>Subclass of</td>
-                  <td><a href="http://www.w3.org/ns/dcat#Distribution">Distribution</a></td>
                 </tr>
               </table>
             </section>            <section id="Distribution-DataService">
@@ -347,6 +329,48 @@
                   <td><a href="http://www.w3.org/ns/dcat#Distribution">Distribution</a></td>
                 </tr>
               </table>
+            </section>            <section id="Distribution-DownloadableFile">
+              <h4>Distribution - downloadable file</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/Distribution-DownloadableFile">https://techlib.cz/vocabulary/ccmm/Distribution-DownloadableFile</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>Distribution - downloadable file</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Physical embodiment of the dataset in a particular format. </td>
+                </tr>
+                <tr>
+                  <td>Subclass of</td>
+                  <td><a href="http://www.w3.org/ns/dcat#Distribution">Distribution</a></td>
+                </tr>
+              </table>
+            </section>            <section id="ResourceToAgentRelationship">
+              <h4>Resource to agent relationship</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/ResourceToAgentRelationship">https://techlib.cz/vocabulary/ccmm/ResourceToAgentRelationship</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>Resource to agent relationship</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>An association class for attaching additional information to a relationship between Dataset and Agent.</td>
+                </tr>
+                <tr>
+                  <td>Subclass of</td>
+                  <td><a href="http://www.w3.org/ns/dcat#Relationship">Relationship</a></td>
+                </tr>
+              </table>
             </section>            <section id="SubjectScheme">
               <h4>Subject scheme</h4>
             
@@ -364,40 +388,183 @@
                   <td>Collection of subjects (keywords, concepts, classification codes) curated by a single source.</td>
                 </tr>
               </table>
-            </section>            <section id="AlternateTitle">
-              <h4>Alternate title</h4>
+            </section>            <section id="TimeReference">
+              <h4>Time reference</h4>
             
               <table class="def">
                 <tr>
                   <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/AlternateTitle">https://techlib.cz/vocabulary/ccmm/AlternateTitle</a></td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/TimeReference">https://techlib.cz/vocabulary/ccmm/TimeReference</a></td>
                 </tr>
                 <tr>
                   <td>Label</td>
-                  <td>Alternate title</td>
+                  <td>Time reference</td>
                 </tr>
                 <tr>
                   <td>Definition</td>
-                  <td>Alternate title of the resource.</td>
+                  <td>A date on which something relative to the resource has happened.</td>
                 </tr>
               </table>
-            </section>
-
-        </section>
-
-        <section>
-        <h2>Properties</h2>
-            <section id="hasRelatedResource">
-              <h4>has related resource</h4>
+            </section>            <section id="ValidationResult">
+              <h4>Validation result</h4>
             
               <table class="def">
                 <tr>
                   <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasRelatedResource">https://techlib.cz/vocabulary/ccmm/hasRelatedResource</a></td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/ValidationResult">https://techlib.cz/vocabulary/ccmm/ValidationResult</a></td>
                 </tr>
                 <tr>
                   <td>Label</td>
-                  <td>has related resource</td>
+                  <td>Validation result</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Class describing the result of validation testing. It may include validation of metadata, data and/or web services accessing the data.</td>
+                </tr>
+              </table>
+            </section>      </section>
+
+      <section>
+        <h2>Properties</h2>
+            <section id="dataBox">
+              <h4>Data box</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/dataBox">https://techlib.cz/vocabulary/ccmm/dataBox</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>Data box</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Data box code</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#ContactDetails">Contact details</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="describes">
+              <h4>describes</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/describes">https://techlib.cz/vocabulary/ccmm/describes</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>describes</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Dataset described by the metadata record.</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#CatalogRecord">Catalog Record</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="email">
+              <h4>Email</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/email">https://techlib.cz/vocabulary/ccmm/email</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>Email</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Email address</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#ContactDetails">Contact details</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="hasAffiliation">
+              <h4>has affiliation</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasAffiliation">https://techlib.cz/vocabulary/ccmm/hasAffiliation</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>has affiliation</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/prov#Person">Person</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/prov#Organization">Organization</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="hasAlternateTitle">
+              <h4>has alternate title</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasAlternateTitle">https://techlib.cz/vocabulary/ccmm/hasAlternateTitle</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>has alternate title</td>
                 </tr>
                 <tr>
                   <td>Domain</td>
@@ -410,7 +577,7 @@
                 <tr>
                   <td>Range</td>
                   <td>
-                    <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
+                    <a href="#AlternateTitle">Alternate title</a>
             
                     
                   </td>
@@ -445,17 +612,50 @@
                   </td>
                   </tr>
               </table>
-            </section>            <section id="hasValidationResult">
-              <h4>has validation result</h4>
+            </section>            <section id="hasIdentifier">
+              <h4>has identifier</h4>
             
               <table class="def">
                 <tr>
                   <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasValidationResult">https://techlib.cz/vocabulary/ccmm/hasValidationResult</a></td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasIdentifier">https://techlib.cz/vocabulary/ccmm/hasIdentifier</a></td>
                 </tr>
                 <tr>
                   <td>Label</td>
-                  <td>has validation result</td>
+                  <td>has identifier</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>has identifier</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/adms#Identifier">Identifier</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="hasRelatedResource">
+              <h4>has related resource</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasRelatedResource">https://techlib.cz/vocabulary/ccmm/hasRelatedResource</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>has related resource</td>
                 </tr>
                 <tr>
                   <td>Domain</td>
@@ -468,7 +668,7 @@
                 <tr>
                   <td>Range</td>
                   <td>
-                    <a href="#ValidationResult">Validation result</a>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
             
                     
                   </td>
@@ -498,6 +698,196 @@
                   <td>Range</td>
                   <td>
                     <a href="#TimeReference">Time reference</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="hasType">
+              <h4>has type</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasType">https://techlib.cz/vocabulary/ccmm/hasType</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>has type</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Reference to the codelist value giving the specific type to the attribute.</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="https://www.w3.org/2002/07/owl#Thing"></a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="hasValidationResult">
+              <h4>has validation result</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasValidationResult">https://techlib.cz/vocabulary/ccmm/hasValidationResult</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>has validation result</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="#ValidationResult">Validation result</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="inSubjectScheme">
+              <h4>in subject scheme</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/inSubjectScheme">https://techlib.cz/vocabulary/ccmm/inSubjectScheme</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>in subject scheme</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="https://techlib.cz/vocabulary/datacite/Subject">Subject</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="#SubjectScheme">Subject scheme</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="isDescribedBy">
+              <h4>is described by</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/isDescribedBy">https://techlib.cz/vocabulary/ccmm/isDescribedBy</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>is described by</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Inverse relation between dataset and metadata record.</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#CatalogRecord">Catalog Record</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="originalRepository">
+              <h4>original repository</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/originalRepository">https://techlib.cz/vocabulary/ccmm/originalRepository</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>original repository</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Link to the repository from which the metadata were originally stored and curated.</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#CatalogRecord">Catalog Record</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Catalog">Catalog</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="phone">
+              <h4>Phone</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://techlib.cz/vocabulary/ccmm/phone">https://techlib.cz/vocabulary/ccmm/phone</a></td>
+                </tr>
+                <tr>
+                  <td>Label</td>
+                  <td>Phone</td>
+                </tr>
+                <tr>
+                  <td>Definition</td>
+                  <td>Phone number</td>
+                </tr>
+                <tr>
+                  <td>Domain</td>
+                  <td>
+                    <a href="#ContactDetails">Contact details</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Range</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
             
                     
                   </td>
@@ -561,391 +951,34 @@
                   </td>
                   </tr>
               </table>
-            </section>            <section id="hasAffiliation">
-              <h4>has affiliation</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasAffiliation">https://techlib.cz/vocabulary/ccmm/hasAffiliation</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has affiliation</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/prov#Person">Person</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/prov#Organization">Organization</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="originalRepository">
-              <h4>original repository</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/originalRepository">https://techlib.cz/vocabulary/ccmm/originalRepository</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>original repository</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Link to the repository from which the metadata were originally stored and curated.</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/dcat#CatalogRecord">Catalog Record</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/dcat#Catalog">Catalog</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="describes">
-              <h4>describes</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/describes">https://techlib.cz/vocabulary/ccmm/describes</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>describes</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Dataset described by the metadata record.</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/dcat#CatalogRecord">Catalog Record</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="inSubjectScheme">
-              <h4>in subject scheme</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/inSubjectScheme">https://techlib.cz/vocabulary/ccmm/inSubjectScheme</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>in subject scheme</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="https://techlib.cz/vocabulary/datacite/Subject">Subject</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#SubjectScheme">Subject scheme</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="hasIdentifier">
-              <h4>has identifier</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasIdentifier">https://techlib.cz/vocabulary/ccmm/hasIdentifier</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has identifier</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>has identifier</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/adms#Identifier">Identifier</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="isDescribedBy">
-              <h4>is described by</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/isDescribedBy">https://techlib.cz/vocabulary/ccmm/isDescribedBy</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>is described by</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Inverse relation between dataset and metadata record.</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/dcat#CatalogRecord">Catalog Record</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="hasAlternateTitle">
-              <h4>has alternate title</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/hasAlternateTitle">https://techlib.cz/vocabulary/ccmm/hasAlternateTitle</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>has alternate title</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="#AlternateTitle">Alternate title</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="relationType">
-              <h4>Relation type</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/relationType">https://techlib.cz/vocabulary/ccmm/relationType</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>Relation type</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Type of the relation between Dataset and related resource.</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="phone">
-              <h4>Phone</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/phone">https://techlib.cz/vocabulary/ccmm/phone</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>Phone</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Phone number</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#ContactDetails">Contact details</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="email">
-              <h4>Email</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/email">https://techlib.cz/vocabulary/ccmm/email</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>Email</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Email address</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#ContactDetails">Contact details</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>            <section id="dataBox">
-              <h4>Data box</h4>
-            
-              <table class="def">
-                <tr>
-                  <td>IRI</td>
-                  <td><a href="https://techlib.cz/vocabulary/ccmm/dataBox">https://techlib.cz/vocabulary/ccmm/dataBox</a></td>
-                </tr>
-                <tr>
-                  <td>Label</td>
-                  <td>Data box</td>
-                </tr>
-                <tr>
-                  <td>Definition</td>
-                  <td>Data box code</td>
-                </tr>
-                <tr>
-                  <td>Domain</td>
-                  <td>
-                    <a href="#ContactDetails">Contact details</a>
-            
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td>Range</td>
-                  <td>
-                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-            
-                    
-                  </td>
-                  </tr>
-              </table>
-            </section>
-        </section>
+            </section>      </section>
 
 
-      <section>
-        <h2>Used prefixes</h2>
-        <table id="table-namespaces" class="simple">
-          <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
-          <tbody>
-              <tr><td><code>xsd</code></td><td><a href=http://www.w3.org/2001/XMLSchema#><code>http://www.w3.org/2001/XMLSchema#</code></a></td></tr>
-          </tbody>
-        </table>
-      </section>
-      <section>
-        <h2>Attachments</h2>
-      
-          <p>This specification includes the following attachments.</p>
-        <table class="def">
-          <thead>
+    <section>
+      <h2>Used prefixes</h2>
+      <table id="table-namespaces" class="simple">
+        <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Attachments</h2>
+    
+        <p>This specification includes the following attachments.</p>
+      <table class="def">
+        <thead>
+          <tr>
+            <th>Attachment</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
             <tr>
-              <th>Attachment</th>
-              <th>Link</th>
+              <td>Vocabulary</td>
+              <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
             </tr>
-          </thead>
-          <tbody>
-              <tr>
-                <td>Vocabulary</td>
-                <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
-              </tr>
-              <tr>
-                <td>Application profile</td>
-                <td><a href="./dsv.ttl">./dsv.ttl</a></td>
-              </tr>
-          </tbody>
-        </table>
-      </section>    </body>
-  </html>
+        </tbody>
+      </table>
+    </section>  </body>
+</html>
