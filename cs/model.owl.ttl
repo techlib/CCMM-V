@@ -53,6 +53,10 @@
     rdfs:label "Subject scheme"@en;
     rdfs:comment "Collection of subjects (keywords, concepts, classification codes) curated by a single source."@en;
     rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
+:IdentifierScheme a owl:Class, rdfs:Class;
+    rdfs:label "Identifier scheme"@en;
+    rdfs:comment "Scheme in which is the identifier value unique, usually representing some authority. Identifier scheme shall always be represented as IRI identifier."@en;
+    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
 :ResourceToAgentRelationship a owl:Class, rdfs:Class;
     rdfs:label "Resource to agent relationship"@en;
     rdfs:comment "An association class for attaching additional information to a relationship between Dataset and Agent."@en;
@@ -133,3 +137,9 @@
     rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
     rdfs:domain <https://www.w3.org/2002/07/owl#Thing>;
     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept>.
+:inScheme a rdf:Property, owl:ObjectProperty;
+    rdfs:label "in scheme"@en;
+    rdfs:comment "Relation between the identifier and scheme in which it is defined and unique."@en;
+    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:domain <http://www.w3.org/ns/adms#Identifier>;
+    rdfs:range :IdentifierScheme.
