@@ -2,144 +2,156 @@
 @prefix prof: <http://www.w3.org/ns/dx/prof/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix : <https://techlib.cz/vocabulary/ccmm/>.
+@prefix : <https://model.ccmm.cz/vocabulary/ccmm/concept#>.
 
-<https://techlib.cz/vocabulary/ccmm/> a owl:Ontology, prof:Profile.
+<https://model.ccmm.cz/vocabulary/ccmm/concept#> a owl:Ontology, prof:Profile.
 :Distribution-DataService a owl:Class, rdfs:Class;
     rdfs:label "Distribution - data service"@en;
     rdfs:comment "Physical embodiment of the dataset as a particular data service. "@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:subClassOf <http://www.w3.org/ns/dcat#Distribution>.
 :ContactDetails a owl:Class, rdfs:Class;
     rdfs:label "Contact details"@en;
     rdfs:comment "Contact details such as telephone, e-mail address etc."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>.
 :phone a rdf:Property, owl:DatatypeProperty;
     rdfs:label "Phone"@en;
     rdfs:comment "Phone number"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain :ContactDetails;
     rdfs:range rdfs:Literal.
 :dataBox a rdf:Property, owl:DatatypeProperty;
     rdfs:label "Data box"@en;
     rdfs:comment "Data box code"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain :ContactDetails;
     rdfs:range rdfs:Literal.
 :email a rdf:Property, owl:DatatypeProperty;
     rdfs:label "Email"@en;
     rdfs:comment "Email address"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain :ContactDetails;
     rdfs:range rdfs:Literal.
 :TimeReference a owl:Class, rdfs:Class;
     rdfs:label "Time reference"@en;
     rdfs:comment "A date on which something relative to the resource has happened."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>.
 :AlternateTitle a owl:Class, rdfs:Class;
     rdfs:label "Alternate title"@en;
     rdfs:comment "Alternate title of the resource."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>.
 :Distribution-DownloadableFile a owl:Class, rdfs:Class;
     rdfs:label "Distribution - downloadable file"@en;
     rdfs:comment "Physical embodiment of the dataset in a particular format. "@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:subClassOf <http://www.w3.org/ns/dcat#Distribution>.
 :ValidationResult a owl:Class, rdfs:Class;
     rdfs:label "Validation result"@en;
     rdfs:comment "Class describing the result of validation testing. It may include validation of metadata, data and/or web services accessing the data."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>.
 :SubjectScheme a owl:Class, rdfs:Class;
     rdfs:label "Subject scheme"@en;
     rdfs:comment "Collection of subjects (keywords, concepts, classification codes) curated by a single source."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>.
 :IdentifierScheme a owl:Class, rdfs:Class;
     rdfs:label "Identifier scheme"@en;
     rdfs:comment "Scheme in which is the identifier value unique, usually representing some authority. Identifier scheme shall always be represented as IRI identifier."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>.
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>.
 :ResourceToAgentRelationship a owl:Class, rdfs:Class;
     rdfs:label "Resource to agent relationship"@en;
     rdfs:comment "An association class for attaching additional information to a relationship between Dataset and Agent."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:subClassOf <http://www.w3.org/ns/dcat#Relationship>.
 :hasRelatedResource a rdf:Property, owl:ObjectProperty;
     rdfs:label "has related resource"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range rdfs:Resource.
 :hasDistribution a rdf:Property, owl:ObjectProperty;
     rdfs:label "has distribution"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range <http://www.w3.org/ns/dcat#Distribution>.
 :hasValidationResult a rdf:Property, owl:ObjectProperty;
     rdfs:label "has validation result"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range :ValidationResult.
 :hasTimeReference a rdf:Property, owl:ObjectProperty;
     rdfs:label "has time reference"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range :TimeReference.
 :qualifiedRelation a rdf:Property, owl:ObjectProperty;
     rdfs:label "qualified relation"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain rdfs:Resource;
     rdfs:range <http://www.w3.org/ns/dcat#Relationship>.
 :relation a rdf:Property, owl:ObjectProperty;
     rdfs:label "relation"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#Relationship>;
     rdfs:range <http://purl.org/dc/terms/Agent>.
 :hasAffiliation a rdf:Property, owl:ObjectProperty;
     rdfs:label "has affiliation"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/prov#Person>;
     rdfs:range <http://www.w3.org/ns/prov#Organization>.
 :originalRepository a rdf:Property, owl:ObjectProperty;
     rdfs:label "original repository"@en;
     rdfs:comment "Link to the repository from which the metadata were originally stored and curated."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#CatalogRecord>;
     rdfs:range <http://www.w3.org/ns/dcat#Catalog>.
 :describes a rdf:Property, owl:ObjectProperty;
     rdfs:label "describes"@en;
     rdfs:comment "Dataset described by the metadata record."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#CatalogRecord>;
     rdfs:range <http://www.w3.org/ns/dcat#Dataset>.
 :inSubjectScheme a rdf:Property, owl:ObjectProperty;
     rdfs:label "in subject scheme"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
-    rdfs:domain <https://techlib.cz/vocabulary/datacite/Subject>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
+    rdfs:domain <https://model.ccmm.cz/vocabulary/datacite/concept#Subject>;
     rdfs:range :SubjectScheme.
 :hasIdentifier a rdf:Property, owl:ObjectProperty;
     rdfs:label "has identifier"@en;
     rdfs:comment "has identifier"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain rdfs:Resource;
     rdfs:range <http://www.w3.org/ns/adms#Identifier>.
 :isDescribedBy a rdf:Property, owl:ObjectProperty;
     rdfs:label "is described by"@en;
     rdfs:comment "Inverse relation between dataset and metadata record."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range <http://www.w3.org/ns/dcat#CatalogRecord>.
 :hasAlternateTitle a rdf:Property, owl:ObjectProperty;
     rdfs:label "has alternate title"@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range :AlternateTitle.
 :hasType a rdf:Property, owl:ObjectProperty;
     rdfs:label "has type"@en;
     rdfs:comment "Reference to the codelist value giving the specific type to the attribute."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <https://www.w3.org/2002/07/owl#Thing>;
     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept>.
 :inScheme a rdf:Property, owl:ObjectProperty;
     rdfs:label "in scheme"@en;
     rdfs:comment "Relation between the identifier and scheme in which it is defined and unique."@en;
-    rdfs:isDefinedBy <https://techlib.cz/vocabulary/ccmm/>;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
     rdfs:domain <http://www.w3.org/ns/adms#Identifier>;
     rdfs:range :IdentifierScheme.
+:resourceUrl a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "resource URL"@en;
+    rdfs:comment "Resolvable URL representing the resource, preferably human readable."@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
+    rdfs:domain rdfs:Resource;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
+:fundingProgram a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Funding program"@en;
+    rdfs:comment "Reference to the specific funding program."@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm/concept#>;
+    rdfs:domain <https://model.ccmm.cz/vocabulary/datacite/concept#FundingReference>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
