@@ -129,7 +129,7 @@
 :hasAlternateTitle a rdf:Property, owl:ObjectProperty;
     rdfs:label "has alternate title"@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
-    rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
+    rdfs:domain rdfs:Resource;
     rdfs:range :AlternateTitle.
 :hasType a rdf:Property, owl:ObjectProperty;
     rdfs:label "has type"@en;
