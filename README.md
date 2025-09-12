@@ -1,1 +1,1 @@
-Tento dokument byl vygenerován 24. 6. 2025 11:46:01.
+Czech Core Metadata Vocabulary is and Ontology dsescribing concepts used in CCMM Metadata Profile that are not defined in upper level ontologies.
