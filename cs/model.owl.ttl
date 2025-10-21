@@ -59,7 +59,7 @@
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>.
 :ResourceToAgentRelationship a owl:Class, rdfs:Class;
     rdfs:label "Resource to agent relationship"@en;
-    rdfs:comment "An association class for attaching additional information to a relationship between Dataset and Agent."@en;
+    rdfs:comment "An association class for attaching additional information to a relationship between Resource and Agent."@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:subClassOf <http://www.w3.org/ns/dcat#Relationship>.
 :hasRelatedResource a rdf:Property, owl:ObjectProperty;
@@ -80,7 +80,7 @@
 :hasTimeReference a rdf:Property, owl:ObjectProperty;
     rdfs:label "has time reference"@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
-    rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
+    rdfs:domain <https://www.w3.org/2002/07/owl#Thing>;
     rdfs:range :TimeReference.
 :qualifiedRelation a rdf:Property, owl:ObjectProperty;
     rdfs:label "qualified relation"@en;
