@@ -40,7 +40,7 @@
     rdfs:label "has temporal representation"@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:domain :TimeReference;
-    rdfs:range <http://www.w3.org/2006/time#TemporalEntity>.
+    rdfs:range <https://www.w3.org/2002/07/owl#Thing>.
 :AlternateTitle a owl:Class, rdfs:Class;
     rdfs:label "Alternate title"@en;
     rdfs:comment "Alternate title of the resource."@en;
