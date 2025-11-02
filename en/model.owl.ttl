@@ -34,7 +34,7 @@
     rdfs:range rdfs:Literal.
 :TimeReference a owl:Class, rdfs:Class;
     rdfs:label "Time reference"@en;
-    rdfs:comment "A date on which something relative to the resource has happened."@en;
+    rdfs:comment "An object representing time reference relevant to some event related to the resource has happened."@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>.
 :AlternateTitle a owl:Class, rdfs:Class;
     rdfs:label "Alternate title"@en;
