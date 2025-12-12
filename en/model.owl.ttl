@@ -160,3 +160,9 @@
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:domain <https://model.ccmm.cz/vocabulary/datacite#FundingReference>;
     rdfs:range <http://www.w3.org/2001/XMLSchema#anyURI>.
+:authorized a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Authorized"@en;
+    rdfs:comment "Specifies whether the identifier is authorized by the subject it represents."@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
+    rdfs:domain <http://www.w3.org/ns/adms#Identifier>;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
