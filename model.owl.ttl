@@ -166,3 +166,17 @@
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:domain <http://www.w3.org/ns/adms#Identifier>;
     rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>.
+:hasPrimaryLanguage a rdf:Property, owl:ObjectProperty;
+    rdfs:label "has primary language"@en;
+    rdfs:comment "A primary language of the Dataset."@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
+    rdfs:subPropertyOf <http://purl.org/dc/terms/language>;
+    rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
+    rdfs:range <http://purl.org/dc/terms/LinguisticSystem>.
+:hasOtherLanguage a rdf:Property, owl:ObjectProperty;
+    rdfs:label "has other language"@en;
+    rdfs:comment "Any other languages of the Dataset."@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
+    rdfs:subPropertyOf <http://purl.org/dc/terms/language>;
+    rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
+    rdfs:range <http://purl.org/dc/terms/LinguisticSystem>.
