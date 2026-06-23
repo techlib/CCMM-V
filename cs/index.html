@@ -14,8 +14,8 @@
         "adms:AssetDistribution",
         "prof:ResourceDescriptor"
       ],
-      "hasArtifact": ".",
-      "hasRole": "role:Guidance",
+      "hasArtifact": "",
+      "hasRole": "role:specification",
       "format": "filetype:HTML",
       "inSpecificationOf": [
         {
@@ -32,60 +32,86 @@
           },
           "isProfileOf": [
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/rdf.ttl"
-              ]
+              "title": {
+                "en": "RDF - Resource Description Framework"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/rdf.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
-              ]
+              "title": {
+                "en": "RDFS - RDF Schema"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/dcat3.ttl"
-              ]
+              "title": {
+                "en": "DCAT - Data Catalog Vocabulary"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/dcat3.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
-              ]
+              "title": {
+                "en": "DCAT-AP vocabulary, the r5r namespace"
+              },
+              "hasResource": {
+                "hasArtifact": "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
-              ]
+              "title": {
+                "en": "DCMI Metadata Terms"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/prov.ttl"
-              ]
+              "title": {
+                "en": "prov-o"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/prov.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://michalmed.github.io/DataCite/en/model.owl.ttl"
-              ]
+              "title": {
+                "en": "datacite"
+              },
+              "hasResource": {
+                "hasArtifact": "https://michalmed.github.io/DataCite/en/model.owl.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/legacy_adms"
-              ]
+              "title": {
+                "en": "ADMS - Asset Description Metadata Schema"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/legacy_adms"
+              }
             },
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/skos.rdf"
-              ]
+              "title": {
+                "en": "SKOS Simple Knowledge Organization System"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/skos.rdf"
+              }
             }
           ],
           "hasResource": [
             {
-              "@id": "https://model.ccmm.cz/vocabulary/ccmm/#spec",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./model.owl.ttl",
-              "hasRole": "role:Vocabulary",
+              "hasArtifact": "../model.owl.ttl",
+              "hasRole": "role:vocabulary",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": [
                 "http://www.w3.org/2000/01/rdf-schema#",
@@ -93,13 +119,12 @@
               ]
             },
             {
-              "@id": "https://model.ccmm.cz/vocabulary/ccmm/#45318abc-c332-421d-8499-69af3c9efa5e",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./45318abc-c332-421d-8499-69af3c9efa5e.svg",
-              "hasRole": "role:Guidance",
+              "hasArtifact": "../45318abc-c332-421d-8499-69af3c9efa5e.svg",
+              "hasRole": "role:guidance",
               "format": "filetype:SVG",
               "conformsTo": "https://www.w3.org/TR/SVG/"
             },
@@ -110,8 +135,8 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": ".",
-              "hasRole": "role:Guidance",
+              "hasArtifact": "",
+              "hasRole": "role:specification",
               "format": "filetype:HTML"
             }
           ]
@@ -176,8 +201,13 @@
                 },
                 "hasResource": {
                   "@id": "prof:hasResource",
-                  "@type": "@id",
-                  "@container": "@set"
+                  "@container": "@set",
+                  "@context": {
+                    "hasArtifact": {
+                      "@id": "prof:hasArtifact",
+                      "@type": "@id"
+                    }
+                  }
                 }
               }
             },
@@ -290,9 +320,9 @@
     <section>
       <h2>Přehled</h2>
 
-        <a href="./45318abc-c332-421d-8499-69af3c9efa5e.svg">
+        <a href="../45318abc-c332-421d-8499-69af3c9efa5e.svg">
           <figure>
-            <img src="./45318abc-c332-421d-8499-69af3c9efa5e.svg" alt="Main view" />
+            <img src="../45318abc-c332-421d-8499-69af3c9efa5e.svg" alt="Main view" />
             <figcaption>Main view</figcaption>
           </figure>
         </a>
@@ -758,6 +788,80 @@
                   </td>
                   </tr>
               </table>
+            </section>            <section id="hasOtherLanguage">
+              <h4>has other language (@en)</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage">https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>has other language (@en)</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Any other languages of the Dataset. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://purl.org/dc/terms/LinguisticSystem">Linguistic System (@en)</a>
+            
+                    
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>Rodičovské vlastnosti</td>
+                    <td><a href="http://purl.org/dc/terms/language">Language (@en)</a></td>
+                  </tr>
+              </table>
+            </section>            <section id="hasPrimaryLanguage">
+              <h4>has primary language (@en)</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://model.ccmm.cz/vocabulary/ccmm#hasPrimaryLanguage">https://model.ccmm.cz/vocabulary/ccmm#hasPrimaryLanguage</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>has primary language (@en)</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>A primary language of the Dataset. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://purl.org/dc/terms/LinguisticSystem">Linguistic System (@en)</a>
+            
+                    
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>Rodičovské vlastnosti</td>
+                    <td><a href="http://purl.org/dc/terms/language">Language (@en)</a></td>
+                  </tr>
+              </table>
             </section>            <section id="hasRelatedResource">
               <h4>has related resource (@en)</h4>
             
@@ -1175,7 +1279,7 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section id="přílohy">
       <h2>Přílohy</h2>
         <p>Součástí této specifikace jsou následující přílohy.</p>
         <table class="def">
@@ -1188,7 +1292,7 @@
         <tbody>
             <tr>
               <td>Slovník</td>
-              <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
+              <td><a href="../model.owl.ttl">../model.owl.ttl</a></td>
             </tr>
             <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
             <tr><td>Konceptuální diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
