@@ -1,5 +1,7 @@
 Czech Core Metadata Vocabulary is and Ontology describing concepts used in CCMM Metadata Profile that are not defined in upper level ontologies.
 
+Specification is located here: https://techlib.github.io/CCMM-V/
+
 ![CCMM schema diagram](45318abc-c332-421d-8499-69af3c9efa5e.svg)
 
 ####### CHANGES:
