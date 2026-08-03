@@ -10,28 +10,6 @@
     rdfs:comment "Physical embodiment of the dataset as a particular data service. "@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:subClassOf <http://www.w3.org/ns/dcat#Distribution>.
-:ContactDetails a owl:Class, rdfs:Class;
-    rdfs:label "Contact details"@en;
-    rdfs:comment "Contact details such as telephone, e-mail address etc."@en;
-    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>.
-:phone a rdf:Property, owl:DatatypeProperty;
-    rdfs:label "Phone"@en;
-    rdfs:comment "Phone number"@en;
-    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
-    rdfs:domain :ContactDetails;
-    rdfs:range rdfs:Literal.
-:dataBox a rdf:Property, owl:DatatypeProperty;
-    rdfs:label "Data box"@en;
-    rdfs:comment "Data box code"@en;
-    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
-    rdfs:domain :ContactDetails;
-    rdfs:range rdfs:Literal.
-:email a rdf:Property, owl:DatatypeProperty;
-    rdfs:label "Email"@en;
-    rdfs:comment "Email address"@en;
-    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
-    rdfs:domain :ContactDetails;
-    rdfs:range rdfs:Literal.
 :TimeReference a owl:Class, rdfs:Class;
     rdfs:label "Time reference"@en;
     rdfs:comment "An object representing time reference relevant to some event related to the resource has happened."@en;
@@ -72,11 +50,6 @@
     rdfs:label "Identifier scheme"@en;
     rdfs:comment "Scheme in which is the identifier value unique, usually representing some authority. Identifier scheme shall always be represented as IRI identifier."@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>.
-:ResourceToAgentRelationship a owl:Class, rdfs:Class;
-    rdfs:label "Resource to agent relationship"@en;
-    rdfs:comment "An association class for attaching additional information to a relationship between Resource and Agent."@en;
-    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
-    rdfs:subClassOf <http://www.w3.org/ns/dcat#Relationship>.
 :hasRelatedResource a rdf:Property, owl:ObjectProperty;
     rdfs:label "has related resource"@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
@@ -146,6 +119,24 @@
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:domain rdfs:Resource;
     rdfs:range :AlternateTitle.
+:phone a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Phone"@en;
+    rdfs:comment "Phone number"@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
+    rdfs:domain <http://www.w3.org/2006/vcard/ns#Kind>;
+    rdfs:range rdfs:Literal.
+:email a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Email"@en;
+    rdfs:comment "Email address"@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
+    rdfs:domain <http://www.w3.org/2006/vcard/ns#Kind>;
+    rdfs:range rdfs:Literal.
+:dataBox a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Data box"@en;
+    rdfs:comment "Data box code"@en;
+    rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
+    rdfs:domain <http://www.w3.org/2006/vcard/ns#Kind>;
+    rdfs:range rdfs:Literal.
 :hasType a rdf:Property, owl:ObjectProperty;
     rdfs:label "has type"@en;
     rdfs:comment "Reference to the codelist value giving the specific type to the attribute."@en;
