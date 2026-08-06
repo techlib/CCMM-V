@@ -28,9 +28,9 @@
     rdfs:comment "Representation of provenance activity in JSON-LD format corresponding to the RO-Crate specification."@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:subClassOf rdfs:Resource.
-:Iso5181JsonRepresentation a owl:Class, rdfs:Class;
-    rdfs:label "ISO 5181 JSON representation"@en;
-    rdfs:comment "Provides link to  the representation of provenance activity information in JSON format according to the ISO/IEC 5181 standard about data provenance."@en;
+:CPMJsonRepresentation a owl:Class, rdfs:Class;
+    rdfs:label "Common provenance model JSON representation"@en;
+    rdfs:comment "Provides link to  the representation of provenance activity information in JSON format according to the Common provenance model specified in  ISO 23494-2 standard."@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:subClassOf rdfs:Resource.
 :Distribution-DownloadableFile a owl:Class, rdfs:Class;
@@ -181,12 +181,12 @@
     rdfs:subPropertyOf <http://purl.org/dc/terms/language>;
     rdfs:domain <http://www.w3.org/ns/dcat#Dataset>;
     rdfs:range <http://purl.org/dc/terms/LinguisticSystem>.
-:hasIso5181JsonRepresentation a rdf:Property, owl:ObjectProperty;
-    rdfs:label "has iso 5181 json representation"@en;
-    rdfs:comment "Link to the JSON representation of provenance activity according to the ISO/IEC 5181 standard."@en;
+:hasCPMJsonRepresentation a rdf:Property, owl:ObjectProperty;
+    rdfs:label "has common provenance model json representation"@en;
+    rdfs:comment "Link to the JSON representation of provenance activity according to the Common provenance model specified in ISO 23494-2 standard."@en;
     rdfs:isDefinedBy <https://model.ccmm.cz/vocabulary/ccmm#>;
     rdfs:domain <http://www.w3.org/ns/prov#Activity>;
-    rdfs:range :Iso5181JsonRepresentation.
+    rdfs:range :CPMJsonRepresentation.
 :hasRo-crateJsonRepresentation a rdf:Property, owl:ObjectProperty;
     rdfs:label "has RO-Crate JSON representation"@en;
     rdfs:comment "Link to the JSON-LD representation of provenance activity according to the RO-Crate specification."@en;
